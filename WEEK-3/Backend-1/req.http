@@ -1,0 +1,72 @@
+###read all users
+GET http://localhost:9000/user-api/users
+
+### read a user by id
+GET http://localhost:9000/user-api/users/3
+
+
+### create new user
+POST http://localhost:9000/user-api/users
+Content-Type: application/json  
+
+{
+
+    "id":2,
+    "name":"vaishhh",
+    "age":19
+}
+
+
+### update new user
+PUT http://localhost:9000/user-api/users
+Content-Type: application/json
+
+{     
+
+    "id":1,
+    "name":"trinayani",
+    "age":18
+}
+
+
+### delete a user by id
+DELETE http://localhost:9000/user-api/users/1  
+
+
+
+
+
+
+### product
+GET http://localhost:9000/product-api/product
+
+### read a user by id
+GET http://localhost:9000/product-api/product/brand
+
+
+### create new user
+POST http://localhost:9000/product-api/product
+Content-Type: application/json  
+
+{
+
+    "id":5,
+    "name":"sunscreen",
+    "brand":"tira",
+    "price":2500
+}
+
+### update new user
+PUT http://localhost:9000/product-api/product
+Content-Type: application/json
+
+{
+
+    "id":5,
+    "name":"dress",
+    "brand":"ria",
+    "price":2000
+}
+
+### delete a user by id
+DELETE http://localhost:9000/product-api/product/5
